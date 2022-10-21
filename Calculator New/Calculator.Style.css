@@ -1,0 +1,101 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+body {
+    padding: 0;
+    margin: 0%;
+    background: linear-gradient(to bottom, white, rgb(190, 187, 187));
+}
+.container {
+    border-radius: 25%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.container > button {
+    cursor: pointer;
+    font-size: 40px;
+    border: 0.5px solid black;
+    outline: none;
+}
+.dots {
+    padding: 10px;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 20px;
+    border: 0px solid;
+    background-color: rgb(44, 39, 39);
+    display: flex;
+    float: left;
+}
+.dot1 {
+    border: 1px solid;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(243, 11, 11);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot2 {
+    border: 1px solid;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(247, 243, 16);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot3 {
+    border: 1px solid;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(8, 243, 47);
+    border-radius: 50%;
+    display: inline-block;
+  }
+.container > button:hover {
+    background-color: rgb(109, 108, 108, .1);
+}
+.span-two {
+    border-bottom-left-radius: 25%;
+    background-color: rgba(71, 71, 70, 0.75);
+    color: red;
+}
+.mim {
+border-bottom-right-radius: 25%;
+background-color: rgba(248, 163, 6, 0.75);
+}
+.ac {
+    background-color: rgba(8, 8, 8, 0.75);
+}
+.ab {
+    background-color: rgba(248, 163, 6, 0.75);
+}
+.bb {
+    background-color: rgba(71, 71, 70, 0.75);
+}
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(44, 39, 39);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+.previous-operand {
+    color: #f9f9fa;
+    font-size: 20px;
+}
+.current-operand {
+    color: #f9f9fa;
+    font-size: 40px;
+}
